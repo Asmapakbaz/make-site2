@@ -1,0 +1,711 @@
+/** @format */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Playfair Display", serif;
+}
+
+.header-site {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  background-color: rgb(0, 0, 0);
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 3;
+}
+
+.header-site img {
+  width: 50px;
+  height: 50px;
+  margin: 10px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 40%;
+  margin-left: 100px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  margin-top: 20px;
+  transition: 0.4s;
+}
+
+nav a:hover {
+  color: grey;
+}
+
+.first-part {
+  width: 100%;
+  /* height: rem; */
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.description {
+  text-align: center;
+  width: 550px;
+  margin-top: 30px;
+  margin-right: 100px;
+}
+
+.description h1 {
+  font-size: 50px;
+  margin-bottom: 40px;
+}
+
+.description p {
+  font-size: 20px;
+  width: 620px;
+  margin-bottom: 40px;
+}
+
+.description a {
+  text-decoration: none;
+  color: white;
+  border: 1px solid white;
+  padding: 15px 40px;
+  border-radius: 10px;
+  font-size: 20px;
+  transition: 0.4s;
+  font-weight: 600;
+}
+
+.description a:hover {
+  background-color: white;
+  color: black;
+}
+
+.first-part section h1,
+p {
+  color: white;
+}
+
+img[alt="logo-first-part"] {
+  width: 160px;
+  height: 160px;
+}
+
+.main-img img {
+  width: 500px;
+}
+
+.second-part {
+  width: 100%;
+  height: 53rem;
+  background-color: #ffffff;
+}
+
+.second-part h2 {
+  color: black;
+  font-size: 50px;
+  text-align: center;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.second-part > p {
+  color: black;
+  text-align: center;
+  margin: 30px 300px;
+  line-height: 35px;
+  font-size: 22px;
+}
+
+.second-part article img {
+  width: 254px;
+  height: 254px;
+  border-radius: 50%;
+  margin-top: 30px;
+}
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px 60px;
+  text-align: center;
+}
+.products article p {
+  color: black;
+}
+
+.products article h3 {
+  margin: 20px 0;
+  letter-spacing: 3px;
+}
+
+.products article p:nth-of-type(2) {
+  color: grey;
+  margin: 20px 0;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.products article a {
+  text-decoration: none;
+  border: 1px solid black;
+  padding: 5px 30px;
+  color: black;
+  transition: all 0.4s ease-out;
+}
+
+.products article a:hover {
+  background-color: black;
+  color: white;
+}
+
+.bt-more-pro {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+.btn {
+  line-height: 50px;
+  height: 50px;
+  text-align: center;
+  width: 250px;
+  cursor: pointer;
+}
+.btn-one {
+  color: #030000;
+  transition: all 0.4s;
+  position: relative;
+}
+.btn-one a {
+  transition: all 0.4s;
+  text-decoration: none;
+  position: relative;
+  z-index: 2;
+  color: white;
+}
+.btn-one::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: all 0.4s;
+  border-top-width: 1px;
+  border-bottom-width: 1px;
+  border-top-style: solid;
+  border-bottom-style: solid;
+  border-top-color: rgba(37, 7, 7, 0.658);
+  border-bottom-color: rgba(24, 4, 4, 0.712);
+  transform: scale(0.1, 1);
+}
+.btn-one:hover a {
+  letter-spacing: 2px;
+  color: black;
+}
+.btn-one:hover::before {
+  opacity: 1;
+  transform: scale(1, 1);
+}
+.btn-one::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  transition: all 0.4s;
+  background-color: rgb(0, 0, 0);
+}
+.btn-one:hover::after {
+  opacity: 0;
+  transform: scale(0.1, 1);
+}
+
+.third-part {
+  width: 100%;
+  height: 650px;
+  background-color: #030000;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.third-part img {
+  width: 35%;
+  height: 88%;
+  margin-left: 20%;
+}
+
+.box-third-part {
+  width: 35%;
+  height: 300px;
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  right: 15%;
+  top: 39%;
+}
+
+.box-third-part h2 {
+  font-style: italic;
+  font-family: "Lobster", cursive;
+}
+
+.box-third-part p {
+  color: black;
+  margin-top: 25px;
+}
+
+.forth-part {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.forth-part > h3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-bottom: 50px;
+  color: rgba(128, 128, 128, 0.664);
+  font-size: 50px;
+}
+
+.forth-part h2 {
+  font-size: 80px;
+  font-style: italic;
+  font-weight: bold;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 180px;
+  margin-top: 30px;
+}
+
+.catalog {
+  width: 60%;
+  height: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-column-gap: 7px;
+  grid-row-gap: 7px;
+  margin-top: 150px;
+}
+
+.catalog div {
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.catalog div h3 {
+  text-align: center;
+  font-size: 40px;
+  color: rgb(255, 255, 255);
+  opacity: 0;
+  transition: all 0.4s ease-in-out;
+}
+
+.catalog div:hover h3 {
+  text-align: center;
+  opacity: 100;
+}
+
+.catalog div:hover {
+  filter: grayscale(50%);
+}
+
+.catalog div:nth-of-type(1) {
+  background-image: url(./image/f45e987f-fe2f-640e-7a20-2efcdec618cb.jpg);
+  grid-area: 1 / 1 / 4 / 2;
+}
+
+.catalog div:nth-of-type(2) {
+  background-image: url(./image/a115607d23f737f33f2d36ff76b8866a.jpeg);
+  grid-area: 4 / 1 / 7 / 2;
+}
+
+.catalog div:nth-of-type(3) {
+  background-image: url(https://img.taste.com.au/lmVc1ciM/taste/2018/03/apr-18_apple-blueberry-pie-with-cinnamon-pastry-3000x2000-136232-1.jpg);
+  grid-area: 1 / 2 / 3 / 3;
+}
+
+.catalog div:nth-of-type(4) {
+  background-image: url(https://img1.wsimg.com/isteam/ip/124486d7-b189-4197-a6be-dd761af79c1e/IMG_2132.jpg/:/cr=t:0%25,l:0%25,w:98.85%25,h:98.85%25/rs=h:1000,cg:true,m);
+  grid-area: 3 / 2 / 5 / 3;
+}
+
+.catalog div:nth-of-type(5) {
+  background-image: url(https://bakerpedia.com/wp-content/uploads/2020/06/Pastry_baking-processes-e1593464950587-400x400.jpg);
+  grid-area: 5 / 2 / 7 / 3;
+}
+
+.catalog div:nth-of-type(6) {
+  background-image: url(https://images.food52.com/cwXe1dI8q5cGKXIK3sxO-qT-dPU=/2016x1344/e9a760b9-dba8-4f21-9bac-75fc76d91e4a--2021-0211_yeasted-puff-pastry_bake-it-up-a-notch_3x2_rocky-luten_015.jpg);
+  grid-area: 1 / 3 / 4 / 4;
+}
+
+.catalog div:nth-of-type(7) {
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/8/8d/Palmeras_de_hojaldre_1.jpg/800px-Palmeras_de_hojaldre_1.jpg);
+  grid-area: 4 / 3 / 7 / 4;
+}
+
+.fifth-part {
+  width: 100%;
+  height: 85vh;
+  background-color: black;
+  margin-top: 50px;
+}
+
+.fifth-part h2 {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  text-align: center;
+}
+
+.fifth-part-box {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.fifth-part-box article {
+  width: 350px;
+  height: 490px;
+  background-color: white;
+  border-radius: 5px;
+  margin-top: 50px;
+  position: relative;
+}
+
+.fifth-part-box article div:nth-of-type(1) {
+  width: 40px;
+  height: 65px;
+  background-color: #7d7c7cc9;
+  position: absolute;
+  top: 0;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px 0px 0px 0px;
+}
+
+.fifth-part-box article div:nth-of-type(2) {
+  text-align: left;
+  margin-left: 15px;
+}
+
+.fifth-part-box article img {
+  width: 100%;
+  height: 50%;
+  border-radius: 5px 5px 0px 0px;
+}
+
+.fifth-part-box article h3 {
+  font-size: 30px;
+  margin: 10px 0;
+  font-style: italic;
+}
+
+.fifth-part-box article p {
+  margin-bottom: 30px;
+  color: #030000;
+  padding: 0 10px;
+}
+
+.fifth-part-box article a {
+  text-decoration: none;
+  color: white;
+  background-color: black;
+  border: 1px solid black;
+  padding: 5px 25px;
+  font-size: 20px;
+  transition: all 0.4s ease-in-out;
+}
+
+.fifth-part-box article a:hover {
+  background-color: white;
+  color: black;
+}
+
+.sixth-part {
+  width: 100%;
+  height: 60vh;
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.sixth-part img {
+  width: 500px;
+  height: 400px;
+}
+
+.sixth-part div {
+  width: 550px;
+  height: 400px;
+  background-color: rgba(116, 111, 111, 0.445);
+  padding-left: 50px;
+  padding-top: 25px;
+}
+
+.sixth-part div > h2 {
+  margin-bottom: 20px;
+  font-size: 30px;
+  font-style: italic;
+}
+.sixth-part div p {
+  font-size: 20px;
+  color: black;
+  margin-bottom: 30px;
+}
+
+footer {
+  width: 100%;
+  height: 60vh;
+  background-color: black;
+  margin-top: 40px;
+}
+
+footer img {
+  width: 130px;
+  height: 130px;
+  margin: 30px 0;
+}
+
+footer div {
+  text-align: center;
+}
+
+.menu-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.menu-footer h3 {
+  font-size: 30px;
+  font-style: italic;
+}
+
+.first-part-footer {
+  color: white;
+}
+
+.first-part-footer li {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.first-part-footer a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s linear;
+}
+
+.first-part-footer a:hover {
+  color: rgba(128, 128, 128, 0.87);
+}
+
+.second-part-footer {
+  color: white;
+  margin-bottom: 30px;
+}
+
+.second-part-footer a {
+  text-decoration: none;
+  color: white;
+  transition: all 0.4s linear;
+}
+
+.second-part-footer a:hover {
+  color: rgba(128, 128, 128, 0.87);
+}
+
+.second-part-footer li {
+  list-style: none;
+  margin: 15px 0;
+}
+
+.third-part-footer i {
+  color: grey;
+  margin: 0 10px;
+  transition: all 0.4s linear;
+}
+
+.third-part-footer i:nth-of-type(1):hover {
+  color: red;
+}
+
+.third-part-footer i:nth-of-type(2):hover {
+  color: blue;
+}
+
+.third-part-footer i:nth-of-type(3):hover {
+  color: #d14c8d;
+}
+
+.third-part-footer i:nth-of-type(4):hover {
+  color: lightblue;
+}
+
+/* @media screen and (max-width: 500px){
+  nav a {
+    font-size: 10px;
+    margin-top: 20px;
+  }
+
+  nav {
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  .first-part{
+    height: 60rem;
+    width: 100%;
+  }
+  
+
+  .main-img img {
+    width: 200px;
+  }
+
+  img[alt="logo-first-part"] {
+    width: 90px;
+    height: 90px;
+  }
+
+  .description h1 {
+    font-size: 30px;
+    margin-bottom: 40px;
+  }
+
+  .description p {
+    font-size: 15px;
+    width: 350px;
+    margin-bottom: 40px;
+  }
+
+  .description a {
+    padding: 10px 30px;
+    font-size: 15px;
+  }
+
+ 
+}
+
+@media screen and (min-width: 500px ) and (max-width: 768px){
+  nav {
+    width: 50%;
+    margin-left: 30px;
+  }
+
+  .main-img img {
+    width: 150px;
+  }
+
+  img[alt="logo-first-part"] {
+    width: 70px;
+    height: 70px;
+  }
+
+  .description h1 {
+    font-size: 10px;
+    margin-bottom: 40px;
+  }
+
+  .description p {
+    font-size: 7px;
+    width: 80px;
+    margin-bottom: 40px;
+    margin-right: 100px;
+  }
+
+  .description a {
+    padding: 10px 30px;
+    font-size: 10px;
+  }
+
+  .description{
+    width: 420px;
+    margin-top: 10px;
+    margin-right: 35%;
+  }
+  .first-part{
+    height: 25rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){
+  .main-img img {
+    width: 300px;
+  }
+
+  img[alt="logo-first-part"] {
+    width: 80px;
+    height: 80px;
+  }
+  .description h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+
+  .description p {
+    font-size: 15px;
+    width: 500px;
+    margin-bottom: 30px;
+  }
+
+  .description a {
+    padding: 10px 30px;
+    font-size: 10px;
+  }
+
+  .description{
+    margin-top: 10px;
+    margin-right: 5%;
+  }
+
+  .first-part{
+    height: 25rem;
+  }
+} */
