@@ -50,29 +50,28 @@ nav a:hover {
 
 .first-part {
   width: 100%;
-  /* height: rem; */
   background-color: black;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
 }
 
 .description {
   text-align: center;
-  width: 550px;
-  margin-top: 30px;
-  margin-right: 100px;
+  width: 55%;
+  padding: auto;
 }
 
 .description h1 {
-  font-size: 50px;
+  font-size: 3.5rem;
   margin-bottom: 40px;
 }
 
 .description p {
-  font-size: 20px;
+  font-size: 1.3rem;
   width: 620px;
+  margin: auto;
   margin-bottom: 40px;
 }
 
@@ -108,7 +107,7 @@ img[alt="logo-first-part"] {
 
 .second-part {
   width: 100%;
-  height: 53rem;
+  /* height: 53rem; */
   background-color: #ffffff;
 }
 
@@ -123,9 +122,10 @@ img[alt="logo-first-part"] {
 .second-part > p {
   color: black;
   text-align: center;
-  margin: 30px 300px;
+  margin: auto;
   line-height: 35px;
   font-size: 22px;
+  width: 800px;
 }
 
 .second-part article img {
@@ -190,6 +190,7 @@ img[alt="logo-first-part"] {
   color: #030000;
   transition: all 0.4s;
   position: relative;
+  margin-bottom: 20px;
 }
 .btn-one a {
   transition: all 0.4s;
@@ -197,6 +198,7 @@ img[alt="logo-first-part"] {
   position: relative;
   z-index: 2;
   color: white;
+  
 }
 .btn-one::before {
   content: "";
@@ -259,7 +261,8 @@ img[alt="logo-first-part"] {
 
 .box-third-part {
   width: 35%;
-  height: 300px;
+  max-height: 300px;
+  overflow: scroll;
   background-color: white;
   text-align: center;
   padding: 20px;
@@ -349,7 +352,7 @@ img[alt="logo-first-part"] {
 }
 
 .catalog div:nth-of-type(1) {
-  background-image: url(./image/f45e987f-fe2f-640e-7a20-2efcdec618cb.jpg);
+  background-image: url(./image/f45e987f-fe2f-640e-7a20-2efcdec618cb.jpg) ;
   grid-area: 1 / 1 / 4 / 2;
 }
 
@@ -385,9 +388,10 @@ img[alt="logo-first-part"] {
 
 .fifth-part {
   width: 100%;
-  height: 85vh;
+  /* height: 85vh; */
   background-color: black;
   margin-top: 50px;
+  padding: 10px 0;
 }
 
 .fifth-part h2 {
@@ -465,7 +469,7 @@ img[alt="logo-first-part"] {
 
 .sixth-part {
   width: 100%;
-  height: 60vh;
+  /* height: 60vh; */
   background-color: white;
   display: flex;
   flex-wrap: wrap;
@@ -480,7 +484,7 @@ img[alt="logo-first-part"] {
 }
 
 .sixth-part div {
-  width: 550px;
+  width: 500px;
   height: 400px;
   background-color: rgba(116, 111, 111, 0.445);
   padding-left: 50px;
@@ -588,7 +592,7 @@ footer div {
   color: lightblue;
 }
 
-/* @media screen and (max-width: 500px){
+@media (max-width: 500px) {
   nav a {
     font-size: 10px;
     margin-top: 20px;
@@ -598,13 +602,36 @@ footer div {
     width: 50%;
     margin-left: 30px;
   }
-
-  .first-part{
-    height: 60rem;
-    width: 100%;
+  footer img {
+    width: 90px;
+    height: 90px;
+    margin: 30px 0;
   }
-  
 
+  .menu-footer h3 {
+    font-size: 20px;
+    font-style: italic;
+  }
+
+  .first-part-footer li {
+    font-size: 12px;
+  }
+
+  .second-part-footer li {
+    font-size: 12px;
+  }
+  .first-part div:nth-of-type(1) {
+    width: 100%;
+
+  }
+  .second-part > p {
+    color: black;
+    text-align: center;
+    margin: auto;
+    line-height: 20px;
+    font-size: 15px;
+    width: 300px;
+  }
   .main-img img {
     width: 200px;
   }
@@ -615,30 +642,111 @@ footer div {
   }
 
   .description h1 {
-    font-size: 30px;
+    font-size: 10px;
     margin-bottom: 40px;
   }
 
   .description p {
-    font-size: 15px;
-    width: 350px;
-    margin-bottom: 40px;
+    font-size: 10px;
+    width: 100px;
+    margin-bottom: 20px;
   }
 
   .description a {
-    padding: 10px 30px;
+    padding: 5px 10px;
+    font-size: 10px;
+  }
+  .forth-part > h3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 25px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    color: rgba(128, 128, 128, 0.664);
+    font-size: 30px;
+  }
+  
+  .forth-part h2 {
+    font-size: 50px;
+    font-style: italic;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-left: 120px;
+    margin-top: 30px;
+  }
+  .catalog {
+    width: 350px;
+  }
+  
+  .catalog div h3 {
+    font-size: 23px;
+  }
+  .sixth-part img {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .sixth-part div {
+    width: 300px;
+    height: 300px;
+  }
+  
+  .sixth-part div > h2 {
     font-size: 15px;
   }
-
- 
+  .sixth-part div p {
+    font-size: 10px;
+  }
+  .third-part {
+    width: 100%;
+    background-color: #030000;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  
+  .third-part img {
+    width: 40%;
+  }
+  
+  .box-third-part {
+    width: 40%;
+  }
+  
+  .box-third-part h2 {
+    font-size: 10px;
+  }
+  
+  .box-third-part p {
+    font-size: 10px;
+  }
 }
 
-@media screen and (min-width: 500px ) and (max-width: 768px){
+@media (min-width: 500px) and (max-width: 768px) {
   nav {
-    width: 50%;
-    margin-left: 30px;
+    width: 60%;
+    margin-left: 15px;
   }
 
+  footer {
+    height: 65vh;
+  }
+  nav a {
+    font-size: 15px;
+  }
+  .second-part > p {
+    color: black;
+    text-align: center;
+    margin: auto;
+    line-height: 20px;
+    font-size: 17px;
+    width: 300px;
+  }
   .main-img img {
     width: 150px;
   }
@@ -649,33 +757,54 @@ footer div {
   }
 
   .description h1 {
-    font-size: 10px;
-    margin-bottom: 40px;
+    font-size: 15px;
+    margin-bottom: 30px;
   }
 
   .description p {
-    font-size: 7px;
-    width: 80px;
+    font-size: 12px;
+    width: 200px;
     margin-bottom: 40px;
-    margin-right: 100px;
   }
 
   .description a {
-    padding: 10px 30px;
+    padding: 10px 10px;
     font-size: 10px;
   }
 
   .description{
-    width: 420px;
+    width: 450px;
     margin-top: 10px;
-    margin-right: 35%;
   }
-  .first-part{
-    height: 25rem;
+  .catalog {
+    width: 500px;
+  }
+  
+  .catalog div h3 {
+    font-size: 23px;
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1024px){
+@media (min-width: 768px) and (max-width: 1024px) {
+  footer {
+    height: 70vh;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+  nav {
+    width: 70%;
+    margin-left: 15px;
+  }
+  .second-part > p {
+    color: black;
+    text-align: center;
+    margin: auto;
+    line-height: 25px;
+    font-size: 20px;
+    width: 500px;
+  }
   .main-img img {
     width: 300px;
   }
@@ -691,7 +820,7 @@ footer div {
 
   .description p {
     font-size: 15px;
-    width: 500px;
+    width: 300px;
     margin-bottom: 30px;
   }
 
@@ -699,13 +828,23 @@ footer div {
     padding: 10px 30px;
     font-size: 10px;
   }
+  .catalog {
+    width: 600px;
+  }
+  
+  .catalog div h3 {
+    font-size: 23px;
+  }
+}
 
-  .description{
-    margin-top: 10px;
-    margin-right: 5%;
+@media (min-width: 1024px) and (max-width:1220px){
+  .description h1 {
+    font-size: 20px;
+    margin-bottom: 30px;
   }
 
-  .first-part{
-    height: 25rem;
+  .description p {
+    font-size: 15px;
+    width: 400px;
   }
-} */
+}
